@@ -1,0 +1,49 @@
+Method1:
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    if (number & 1)
+   {
+    printf("%d is odd.\n", number); 
+    }
+ else 
+     {
+      printf("%d is even.\n", number);
+     }
+    return 0;
+}
+
+Method2:
+    if ((number / 2) * 2 == number)
+    {
+        printf("%d is even.\n", number);
+    }
+else 
+    {
+        printf("%d is odd.\n", number);
+    }
+    
+Method3:
+
+#include <stdio.h>
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    int temp = number;
+    while (temp >= 2) {
+        temp = temp - 2;
+    }
+    
+    if (temp == 0) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+    
+    return 0;
+}
+Method3:
+
